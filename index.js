@@ -63,7 +63,7 @@ app.post("/webhook", async (req, res) => {
   try {
     const intent = req.body.queryResult.intent.displayName;
     const city = req.body.queryResult.parameters["geo-city"];
-    const type = req.body.queryResult.parameters["Vendor-type"];
+    const type = req.body.queryResult.parameters["vendor-type"];
 
     console.log("Intent:", intent);
     console.log("City:", city);
